@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>SurveyForm</title>
+  </head>
+  <body>
+     <h1 id="title">Patricão - Survey Form</h1>
+     <p id="description">Please, fill out this form with the required info.</p>
+     <form id="survey-form" action="https://register-demo.freecodecamp.org">
+     <fieldset>
+       <label id="name-label">Name: <input name="name" type="text" id="name" required placeholder="Insert your name here"/></label>
+       <label id="email-label">E-mail: <input name="email" type="email" id="email" required placeholder="Insert your e-mail here"/></label>
+       <label id="number-label">Number (DDD+tel): <input name="number" id="number" type="number" placeholder="Ex: 99999-9999" required pattern="[0-9]+" min="8" max="9"/>
+       <label>Which option best describes your current role? 
+         <select name="role" id="dropdown">
+           <option value="">Select current role</option>
+           <option value="1">Designer</option>
+           <option value="2">Developer (front-end)</option>
+           <option value="3">Developer (back-end)</option>
+           <option value="4">Looking for a job</option>
+          </select>
+      </fieldset>
+      <fieldset>
+        <label>Would you recommend freeCodeCamp to a friend?</label>
+          <label><input class="inline" value="definitely" type="radio" name="recommend" checked>Definitely</label>
+          <label><input class="inline" value="maybe" type="radio" name="recommend">Maybe</label>
+          <label><input class="inline" value="notsure" type="radio" name="recommend">Not sure</label>
+      </fieldset>
+      <fieldset>
+        <label>Would you like to continue studying?</label>
+          <label><input class="inline" value="yes" type="radio" name="study" checked>Yes</label>
+          <label><input class="inline" value="no" type="radio" name="study">No</label>
+      </fieldset>
+      <fieldset>
+        <label>What would you like to see improved?</label>
+        <label><input class="inline" type="checkbox" value="FrontEnd">Front-end projects</label>
+        <label><input class="inline" type="checkbox" value="BackEnd">Back-end projects</label>
+        <label><input class="inline" type="checkbox" value="challenges">Challenges
+      </fieldset>
+      <fieldset>
+        <label>Any comments or suggestions?</label>
+        <textarea name="suggestions" placeholder="Enter your comment here..."></textarea>
+        <input type="Submit" id="submit" value="Submit"/>
+        </form>
+
+
+
+  
+  
+  
+  </body>
+</html>
+
